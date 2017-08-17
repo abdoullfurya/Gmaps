@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Lord-commannders playground</title>
+	<link href="node_modules/bootswatch/flatly/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="assets/css/styles.css" type="text/css" rel="stylesheet" />
+    <style>
+	  body{
+		  padding: 50px;
+		  background-color: #66ccff;
+		  font-family: sans-serif;
+	  }
+	
+		h1{
+			text-align: center;
+		}
+		
+		.jumbotron{
+			color:#66ccff;
+			background-color: azure;
+		}
+	</style>
+</head>
+<body>
+     
+	 <div class="jumbotron">
+	   <h1>I locate </h1>
+	 
+	 
+	<div class="container">
+		<form id="geocoding_form" class="form-horizontal">
+			<div class="form-group">
+				<div class="col-xs-12 col-md-6 col-md-offset-3">
+					<div class="input-group">
+						<input type="text" class="form-control" id="address" placeholder="Enter your location...">
+						<span class="input-group-btn">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="map-overlay">
+			<p>Loading...</p>
+			<div id="map"></div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-md-offset-3 save-container">
+			<h4 id="save-location"></h4><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+		</div>
+
+		<div class="list-group col-xs-12 col-md-6 col-md-offset-3">
+			<span class="list-group-item active">Saved Locations</span>
+		</div>
+
+	</div>
+  
+  </div>
+	<div class="footer">
+		copyright &copy; abdoullfurya 2017
+	</div>
+	<!-- The jQuery library -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+	<!-- The Moment.js library -->
+	<script src="node_modules/moment/moment.js"></script>
+
+	<!-- Including the Google Maps API and the GMaps library -->
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="node_modules/gmaps/gmaps.js"></script>
+
+	<!-- Including our own JavaScript file -->
+	<script src="assets/js/script.js"></script>
+
+</body>
+</html>
